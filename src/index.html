@@ -1,0 +1,80 @@
+<!--<!doctype html>-->
+<!--<html>-->
+<!--<head>-->
+<!--<title>"Honey, what's for dinner tonight?"</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<div id="app">-->
+<!--<h1>Hello App!</h1>-->
+<!--<p>-->
+<!--&lt;!&ndash; use router-link component for navigation. &ndash;&gt;-->
+<!--&lt;!&ndash; specify the link by passing the `to` prop. &ndash;&gt;-->
+<!--&lt;!&ndash; `<router-link>` will be rendered as an `<a>` tag by default &ndash;&gt;-->
+<!--<router-link to="/fridge">Fridge</router-link>-->
+<!--<router-link to="/cupboard">Cupboardr</router-link>-->
+<!--<router-link to="/cupboard">Cupboardr</router-link>-->
+<!--</p>-->
+<!--&lt;!&ndash; route outlet &ndash;&gt;-->
+<!--&lt;!&ndash; component matched by the route will render here &ndash;&gt;-->
+<!--<router-view></router-view>-->
+<!--</div>-->
+<!--<script src="bundle.js"></script>-->
+<!--<script type="text/javascript" src="bundle.js"></script></body>-->
+<!--</html>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs</title>
+</head>
+<body>
+<div id="app">
+    <nav class="navbar sticky-top navbar-light shadow-sm p-3 rounded-bottom" style="background-color: #388200">
+        <span class="navbar-brand h1" style="color:#FEF2E4">
+            <img src="" style="background: purple" width="30" height="30"
+                 class="d-inline-block align-top" alt="">
+            PRUNE
+        </span>
+        <span class="navbar-brand h1" style="color:#FEF2E4">
+            BBT
+        </span>
+    </nav>
+    <div id="view" class="container mt-4" style="height: 70vh;">
+        <router-view></router-view>
+    </div>
+    <nav class="navbar fixed-bottom navbar-light shadow-sm rounded-top border-top" style="background-color: #388200">
+        <div class="container">
+            <router-link to="suggestions">
+                <a class="nav-item nav-link">
+                    <img src="./assets/icons/chef-blank.png" height="30vh" width="30vw">
+                </a>
+            </router-link>
+            <router-link to="myKitchen">
+                <a class="nav-item nav-link">
+                    <img src="./assets/icons/fridge-blank.png" height="30vh" width="30vw">
+                </a>
+            </router-link>
+            <router-link to="scanFood">
+                <a class="nav-item nav-link">
+                    <img src="assets/icons/camera-blank.png" height="30vh" width="30vw">
+                </a>
+            </router-link>
+            <router-link to="favoritesRecipes">
+                <a class="nav-item nav-link">
+                    <img src="./assets/icons/heart-blank.png" height="30vh" width="30vw">
+                </a>
+            </router-link>
+            <router-link to="about">
+                <a class="nav-item nav-link">
+                    <img src="./assets/icons/gears-blank.png" height="30vh" width="30vw">
+                </a>
+            </router-link>
+        </div>
+    </nav>
+</div>
+<script src="bundle.js"></script>
+</body>
+</html>

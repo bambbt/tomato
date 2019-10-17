@@ -1,0 +1,18 @@
+#258039 Avocado
+#F5BE41 yellow pepper
+#31A9B8 Aqua blue
+#CF3721 Tomato
+
+----------------
+
+#4C3F54 Fig
+#D13525 Apple red
+#F2C057 Swiss cheese
+#486824 Basil
+
+----------------
+
+#FEF2E4 Mushroom
+#FD974F Onion
+#C60000 red pepper
+#805A3B driftwood
