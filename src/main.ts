@@ -4,6 +4,10 @@ import "./registerServiceWorker";
 import router from "./router";
 import store from "./store";
 
+//import styles 
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+
 Vue.config.productionTip = false;
 
 new Vue({
