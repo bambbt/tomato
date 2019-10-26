@@ -27,7 +27,7 @@
             </router-link>
             <router-link to="scanFood">
                 <a class="nav-item nav-link">
-                    <img src="assets/icons/camera-blank.png" height="30vh" width="30vw">
+                    <img src="./assets/icons/camera-blank.png" height="30vh" width="30vw">
                 </a>
             </router-link>
             <router-link to="favoritesRecipes">

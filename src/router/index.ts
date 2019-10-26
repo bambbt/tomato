@@ -4,7 +4,7 @@ import AddFoodVue from "../views/AddFood.vue";
 import AboutVue from "../views/About.vue";
 import SuggestionVue from "../views/Suggestion.vue";
 import KitchenVue from "../views/Kitchen.vue";
-import FavoritesVue from "../views/favorites.vue";
+import FavoritesVue from "../views/Favorites.vue";
 
 Vue.use(VueRouter);
 

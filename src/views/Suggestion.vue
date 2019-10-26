@@ -9,7 +9,7 @@
       <div class="card-body">
         <div class="row">
           <div class="col">
-            <h5 class="card-title">Steak & Frites</h5>
+            <h5 class="card-title">Steak &amp; Frites</h5>
           </div>
         </div>
         <div class="row">

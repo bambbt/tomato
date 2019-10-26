@@ -10,8 +10,7 @@
           @click="toggleShowText"
           type="button"
           class="btn btn-light border rounded"
-        >
-          {{ btnValue }}
+        >{{ btnText }}
         </button>
       </div>
     </div>
@@ -23,7 +22,7 @@ export default {
   data() {
     return {
       more: false,
-      btnValue: "Read More"
+      btnText: "Read More"
     };
   },
   props: ["htmlContent", "begin", "end"],
@@ -38,7 +37,7 @@ export default {
   methods: {
     toggleShowText: function() {
       this.more = !this.more;
-      this.btnValue = "Read More" === this.btnValue ? "Read Less" : "Read More";
+      this.btnText = "Read More" === this.btnText ? "Read Less" : "Read More";
     }
   }
 };
