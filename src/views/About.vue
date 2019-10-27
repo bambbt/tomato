@@ -14,7 +14,7 @@
     </div>
 
     <div class="card shadow-sm p-3 mb-5 bg-white rounded">
-      <div class="card-body" v-readless="702">
+      <div class="card-body" v-read-less="{nbCharacters: 701}">
 
         <div class="row">
           <div class="col">
