@@ -15,7 +15,7 @@ import { ClientSideStorage } from '@/service/clientSideStorage/ClientSideStorage
 
 Vue.config.productionTip = false;
 
-ClientSideStorage.autoSelectStrategy();
+ClientSideStorage.selectDefaultStrategy();
 
 new Vue({
   router,

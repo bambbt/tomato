@@ -1,5 +1,5 @@
 import { IClientStorage } from './IClientStorage';
-import { LocalStorage } from './storage/MyLocalStorage';
+import { MyLocalStorage } from './storage/MyLocalStorage';
 
 export class ClientSideStorage {
 
@@ -7,7 +7,7 @@ export class ClientSideStorage {
 
     public static selectDefaultStrategy(): void {
         if (ClientSideStorage.isLocalStorageSupported()) {
-            ClientSideStorage.strategy = new LocalStorage();
+            ClientSideStorage.strategy = new MyLocalStorage();
         } else {
             console.warn('This browser doesn\'t support IndexedDB');
         }
@@ -15,7 +15,7 @@ export class ClientSideStorage {
 
     public static setStrategy(strategy: IClientStorage): void {
         if (ClientSideStorage.isLocalStorageSupported()) {
-            ClientSideStorage.strategy = new LocalStorage();
+            ClientSideStorage.strategy = strategy;
         } else {
             console.warn('This browser doesn\'t support IndexedDB');
         }
