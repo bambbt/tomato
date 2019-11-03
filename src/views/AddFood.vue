@@ -28,10 +28,6 @@ export default Vue.extend({
   methods: {
     addProduct: function(e: any) {
       this.$store.commit("addProduct", this.product);
-      ClientSideStorageAccessor.setItem(
-        "products",
-        this.$store.getters.getProducts
-      );
       this.product = {} as Product;
     }
   }
