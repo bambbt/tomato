@@ -9,16 +9,12 @@ export class ClientSideStorageAccessor {
         if (ClientSideStorageAccessor.isLocalStorageSupported()) {
             ClientSideStorageAccessor.strategy = new LocalStorageAccessor();
         } else {
-            console.warn('This browser doesn\'t support IndexedDB');
+            console.warn('This browser doesn\'t support localStorage');
         }
     }
 
     public static setStrategy(strategy: IClientStorageAccessor): void {
-        if (ClientSideStorageAccessor.isLocalStorageSupported()) {
-            ClientSideStorageAccessor.strategy = strategy;
-        } else {
-            console.warn('This browser doesn\'t support IndexedDB');
-        }
+        ClientSideStorageAccessor.strategy = strategy;
     }
 
     private static isLocalStorageSupported(): boolean {

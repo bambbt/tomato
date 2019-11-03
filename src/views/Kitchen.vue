@@ -26,7 +26,7 @@ export default {
     products() {
       return this.$store.getters.getProducts;
     }
-  },
+  }
 };
 </script>
 <style></style>
