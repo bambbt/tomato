@@ -134,9 +134,6 @@ export default {
     return {};
   },
   methods: {},
-  components: {
-   // ReadMoreComponent
-  }
 };
 </script>
 

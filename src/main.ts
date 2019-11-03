@@ -3,6 +3,8 @@ import App from "./App.vue";
 import "./registerServiceWorker";
 import router from "./router";
 import store from "./store";
+
+//import directives
 import './directives/ReadLessDirective'
 
 //import styles 
