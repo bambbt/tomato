@@ -1,7 +1,11 @@
 import { IClientStorage } from '../IClientStorage';
 
 export class MyLocalStorage extends IClientStorage {
-    
+
+    constructor() {
+        super('LocalStorage');
+    }
+
     setItem(name: string, value: any): void {
         window.localStorage.setItem(name, JSON.stringify(value))
     }
