@@ -5,13 +5,12 @@ export default {
     state: {
         products: [] as Array<Product>
     },
-    // actions,
     mutations: {
         addProduct: (state: any, product: Product) => {
             state.products.push(product);
         },
-        setProducts(state: any, products: Array<Product>) {
-            state.products = products
+        setProducts: (state: any, products: Array<Product>) => {
+            state.products = products;
         },
     },
     getters: {

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <form @submit="addProduct">
+    <form @submit.prevent="addProduct">
       <div class="form-group">
         <label for="name">Name</label>
         <input type="text" v-model="product.name" class="form-control" id="name" />
@@ -28,7 +28,6 @@ export default Vue.extend({
     addProduct: function(e: any) {
       this.$store.commit("addProduct", this.product);
       this.product = {} as Product;
-      e.preventDefault();
     }
   }
 });
