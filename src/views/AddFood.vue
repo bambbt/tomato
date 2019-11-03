@@ -17,7 +17,7 @@
 <script lang="ts">
 import Vue from "vue";
 import { Product } from "../types/Product";
-import { ClientSideStorage } from "../service/clientSideStorage/ClientSideStorage";
+import { ClientSideStorageAccessor } from "../service/clientSideStorage/ClientSideStorageAccessor";
 
 export default Vue.extend({
   data() {
@@ -28,7 +28,10 @@ export default Vue.extend({
   methods: {
     addProduct: function(e: any) {
       this.$store.commit("addProduct", this.product);
-      ClientSideStorage.setItem("products", this.$store.getters.getProducts);
+      ClientSideStorageAccessor.setItem(
+        "products",
+        this.$store.getters.getProducts
+      );
       this.product = {} as Product;
     }
   }

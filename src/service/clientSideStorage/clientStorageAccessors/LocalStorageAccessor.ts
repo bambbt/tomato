@@ -1,6 +1,6 @@
-import { IClientStorage } from '../IClientStorage';
+import { IClientStorageAccessor } from '../IClientStorageAccessor';
 
-export class MyLocalStorage extends IClientStorage {
+export class LocalStorageAccessor extends IClientStorageAccessor {
 
     constructor() {
         super('LocalStorage');

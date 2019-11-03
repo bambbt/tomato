@@ -1,4 +1,4 @@
-export abstract class IClientStorage {
+export abstract class IClientStorageAccessor {
 
     constructor(type: string) {
         console.log(`${type} is instanciated`);

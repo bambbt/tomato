@@ -11,11 +11,11 @@ import './directives/ReadLessDirective'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 //import services
-import { ClientSideStorage } from '@/service/clientSideStorage/ClientSideStorage'
+import { ClientSideStorageAccessor } from '@/service/clientSideStorage/ClientSideStorageAccessor'
 
 Vue.config.productionTip = false;
 
-ClientSideStorage.selectDefaultStrategy();
+ClientSideStorageAccessor.selectDefaultStrategy();
 
 new Vue({
   router,
