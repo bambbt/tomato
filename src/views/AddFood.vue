@@ -6,7 +6,7 @@
         <input type="text" v-model="product.name" class="form-control" id="name" />
         <p v-if="showErrors" class="text-danger">
           <b>Must contain letters and/or spaces.</b>
-          <br/>
+          <br />
           <b>20 characters max.</b>
         </p>
       </div>
@@ -14,12 +14,14 @@
         <label for="quantity">Quantity</label>
         <input type="text" v-model="product.quantity" class="form-control" id="quantity" />
         <p v-if="showErrors" class="text-danger">
-          <b>Quantity must be below 9999.</b><br/>
-          <b>Measure unit ( 2 characters max. ) and spaces allowed.</b><br/>
+          <b>Quantity must be below 9999.</b>
+          <br />
+          <b>Measure unit ( 2 characters max. ) and spaces allowed.</b>
+          <br />
           <b>Example: 23 Kgs.</b>
         </p>
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <input type="submit" value="Submit" class="btn btn-primary" />
     </form>
   </div>
 </template>
