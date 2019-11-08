@@ -42,4 +42,4 @@ Vue.directive('read-less', {
         // do clean up work
         // e.g. remove event listeners added in bind()
     }
-})
+});
