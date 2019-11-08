@@ -16,9 +16,9 @@
         <p v-if="showErrors" class="text-danger">
           <b>Quantity must be below 9999.</b>
           <br />
-          <b>Measure unit ( 2 characters max. ) and spaces allowed.</b>
+          <b>Measure unit ( 4 characters max. ) and spaces allowed.</b>
           <br />
-          <b>Example: 23 Kgs.</b>
+          <b>Example: 23 Kg.</b>
         </p>
       </div>
       <input type="submit" value="Submit" class="btn btn-primary" />
@@ -45,13 +45,17 @@ export default Vue.extend({
   },
   methods: {
     addProduct: function(e: any) {
+      if (this.product.name === undefined || this.product.quantity === undefined) {
+        this.isValid = false;
+        return;
+        }
       this.isValid =
         this.product.name.search(/^([A-Za-z- ]{0,20})$/) != -1 &&
         this.product.quantity.search(
-          /^([0-9]{1,4})([ ]{0,1})([A-Za-z]{0,2})$/
+          /^([0-9]{1,4})([ ]{0,1})([A-Za-z]{0,4})$/
         ) != -1;
       if (this.isValid) {
-        this.product.quantity = this.product.quantity.replace(" ", "");
+        this.product.quantity = this.product.quantity.trim();
         this.product.name = this.product.name.trim();
         this.$store.commit("addProduct", this.product);
         this.product = {} as Product;

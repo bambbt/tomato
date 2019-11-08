@@ -35,7 +35,7 @@
 
         <nav-item-component
           target="myKitchen"
-          badge="0"
+          v-bind:badge="nbItemsAdded"
           img-src="fridge-blank.png"
           img-width="30"
           img-height="30"
@@ -70,10 +70,14 @@
 </template>
 <script>
 import Vue from "vue";
-//import components
 import NavItemComponent from "./components/navigation/NavItemComponent";
 
 export default Vue.extend({
+  computed: {
+    nbItemsAdded() {
+      return this.$store.getters.nbItemsAdded;
+    }
+  },
   components: {
     NavItemComponent
   }
