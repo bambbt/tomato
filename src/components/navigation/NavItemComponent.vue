@@ -5,8 +5,9 @@
         v-bind:src="getImgURL(imgSrc)"
         v-bind:height="imgHeight+'vh'"
         v-bind:width="imgWidth+'vw'"
+        class='img-fluid'
       />
-      <span v-if="badge > 0" class="badge badge-success">{{badge}}</span>
+      <span v-if="Number.parseInt(badge) > 0" class="badge badge-success">{{badge}}</span>
     </a>
   </router-link>
 </template>
