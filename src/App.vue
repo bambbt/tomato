@@ -29,40 +29,40 @@
           target="suggestions"
           badge="0"
           img-src="chef-blank.png"
-          img-width="30"
-          img-height="30"
+          img-width="28"
+          img-height="28"
         ></nav-item-component>
 
         <nav-item-component
           target="myKitchen"
-          v-bind:badge="nbItemsAdded"
+          v-bind:badge="`${nbItemsAdded}`"
           img-src="fridge-blank.png"
-          img-width="30"
-          img-height="30"
+          img-width="28"
+          img-height="28"
         ></nav-item-component>
 
         <nav-item-component
           target="scanFood"
           badge="0"
           img-src="camera-blank.png"
-          img-width="30"
-          img-height="30"
+          img-width="28"
+          img-height="28"
         ></nav-item-component>
 
         <nav-item-component
           target="favoritesRecipes"
           badge="0"
           img-src="heart-blank.png"
-          img-width="30"
-          img-height="30"
+          img-width="28"
+          img-height="28"
         ></nav-item-component>
 
         <nav-item-component
           target="about"
           badge="0"
           img-src="gears-blank.png"
-          img-width="30"
-          img-height="30"
+          img-width="28"
+          img-height="28"
         ></nav-item-component>
       </div>
     </nav>
