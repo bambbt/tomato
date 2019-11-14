@@ -22,7 +22,8 @@ export default {
     },
     getters: {
         getProducts: (state: any) => {
-            if (state.products.length === 0)
+            if (state.products.length === 0 &&
+                ClientSideStorageAccessor.getItem("products") !== null)
                 state.products = ClientSideStorageAccessor.getItem("products")
             return state.products;
         },
