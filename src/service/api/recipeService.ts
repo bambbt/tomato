@@ -12,7 +12,7 @@ export default class RecipeService {
             params: {
                 ingredients: ingredients.join(','),
                 number: RecipeService.nbRecipesExpected,
-                apiKey: 'apikey'
+                apiKey: 'REPLACE WITH API KEY'
             }
         });
     }
