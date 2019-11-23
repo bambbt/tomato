@@ -16,6 +16,7 @@
             v-for="recipe in recipes"
             v-bind:key="recipe.id"
             :title="recipe.title"
+            :link="`/recipe/${recipe.id}`"
             v-bind:duration="10"
             summary="Eat, eat, eat!"
             v-bind:level="{style:'text-success', value:'EASY'}"

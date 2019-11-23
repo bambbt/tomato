@@ -22,8 +22,8 @@ export default {
   data() {
     return {};
   },
-  beforeMount: function() {
-    this.$store.commit('resetNbItemsAdded');
+  created: function() {
+    this.$store.commit("resetNbItemsAdded");
   },
   computed: {
     products() {

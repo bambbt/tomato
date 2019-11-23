@@ -1,4 +1,3 @@
-import Recipe from '../../types/recipe'
 import axios from "axios"
 export default class RecipeService {
 
@@ -12,8 +11,20 @@ export default class RecipeService {
             params: {
                 ingredients: ingredients.join(','),
                 number: RecipeService.nbRecipesExpected,
-                apiKey: 'REPLACE WITH API KEY'
+                apiKey: 'fc9eb28ac7bd478d97caad7bf209f018'
             }
         });
+    }
+
+    public static getRecipeInstructions(id: number) {
+        RecipeService.remainingPoints = RecipeService.remainingPoints - (0.01 * RecipeService.nbRecipesExpected + 1);
+        return axios.get("../json/instructions.json");
+        // {
+        //     params: {
+        //         ingredients: ingredients.join(','),
+        //         number: RecipeService.nbRecipesExpected,
+        //         apiKey: 'REPLACE WITH API KEY'
+        //     }
+        // });
     }
 }

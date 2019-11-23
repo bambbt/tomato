@@ -7,8 +7,10 @@ import store from "./store";
 //import directives
 import './directives/ReadLessDirective'
 
-//import styles 
+//import boostrap
+import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
+
 
 Vue.config.productionTip = false;
 

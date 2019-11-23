@@ -5,10 +5,9 @@ import AboutVue from "../views/About.vue";
 import SuggestionVue from "../views/Suggestion.vue";
 import KitchenVue from "../views/Kitchen.vue";
 import FavoritesVue from "../views/Favorites.vue";
+import Recipe from "../views/Recipe.vue"
 
 Vue.use(VueRouter);
-
-
 
 // 2. Define some routes
 // Each route should map to a component. The "component" can
@@ -20,7 +19,8 @@ const routes = [
   { path: "/myKitchen", component: KitchenVue },
   { path: "/scanFood", component: AddFoodVue },
   { path: "/favoritesRecipes", component: FavoritesVue },
-  { path: "/about", component: AboutVue }
+  { path: "/about", component: AboutVue },
+  { path: "/recipe/:recipe_id", component: Recipe }
 ];
 
 
