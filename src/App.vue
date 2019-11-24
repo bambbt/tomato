@@ -26,7 +26,7 @@
     >
       <div class="container">
         <nav-item-component
-          target="suggestions"
+          target="/suggestions"
           badge="0"
           img-src="chef-blank.png"
           img-width="28"
@@ -34,7 +34,7 @@
         ></nav-item-component>
 
         <nav-item-component
-          target="myKitchen"
+          target="/myKitchen"
           v-bind:badge="`${nbItemsAdded}`"
           img-src="fridge-blank.png"
           img-width="28"
@@ -42,7 +42,7 @@
         ></nav-item-component>
 
         <nav-item-component
-          target="scanFood"
+          target="/scanFood"
           badge="0"
           img-src="camera-blank.png"
           img-width="28"
@@ -50,7 +50,7 @@
         ></nav-item-component>
 
         <nav-item-component
-          target="favoritesRecipes"
+          target="/favoritesRecipes"
           badge="0"
           img-src="heart-blank.png"
           img-width="28"
@@ -58,7 +58,7 @@
         ></nav-item-component>
 
         <nav-item-component
-          target="about"
+          target="/about"
           badge="0"
           img-src="gears-blank.png"
           img-width="28"

@@ -1,10 +1,6 @@
 <template>
   <div class="card shadow-sm p-3 mb-3 bg-white rounded">
-    <img
-      v-bind:src="getImgURL(imgSrc)"
-      class="card-img-top"
-      alt="..."
-    />
+    <img v-bind:src="getImgURL(imgSrc)" class="card-img-top" alt="..." />
     <div class="card-body">
       <div class="row">
         <div class="col">
@@ -13,10 +9,8 @@
       </div>
       <div class="row">
         <div class="col">
-          <p class="card-text">
-            {{summary}}
-          </p>
-          <a href="#" class="btn btn-primary">Let's cook !</a>
+          <p class="card-text">{{summary}}</p>
+          <router-link :to="`${link}`" tag="a" class="btn btn-primary">Let's cook !</router-link>
         </div>
       </div>
     </div>
@@ -29,10 +23,11 @@ export default Vue.component("suggestion-card", {
     imgSrc: String,
     title: String,
     summary: String,
+    link: String
   },
   methods: {
     getImgURL(path: string) {
-      return path
+      return path;
     }
   }
 });

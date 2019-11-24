@@ -3,7 +3,7 @@ import { IClientStorageAccessor } from '../IClientStorageAccessor';
 export class LocalStorageAccessor extends IClientStorageAccessor {
 
     constructor() {
-        super('LocalStorage');
+        super('Local storage');
     }
 
     setItem(name: string, value: any): void {

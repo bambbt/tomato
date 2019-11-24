@@ -1,5 +1,5 @@
 <template>
-  <router-link v-bind:to="target">
+  <router-link v-bind:to="`${target}`">
     <a class="nav-item nav-link">
       <img
         v-bind:src="getImgURL(imgSrc)"

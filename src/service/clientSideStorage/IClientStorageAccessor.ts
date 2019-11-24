@@ -1,7 +1,7 @@
 export abstract class IClientStorageAccessor {
 
     constructor(type: string) {
-        console.log(`${type} is instanciated`);
+        console.info(`${type} accessor enabled.`);
     }
 
     abstract setItem(name: string, value: any): void;

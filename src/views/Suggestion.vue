@@ -6,6 +6,7 @@
           v-bind:imgSrc="cardRecipe.image"
           v-bind:title="cardRecipe.title"
           summary="Nothing is better than a meal from home!"
+          :link="`/recipe/${cardRecipe.id}`"
         ></suggestion-card-component>
       </div>
     </div>

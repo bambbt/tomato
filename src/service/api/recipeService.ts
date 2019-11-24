@@ -6,7 +6,6 @@ export default class RecipeService {
 
     public static getListByIngredients(ingredients: Array<string>) {
         RecipeService.remainingPoints = RecipeService.remainingPoints - (0.01 * RecipeService.nbRecipesExpected + 1);
-        console.log(ingredients.join(','));
         return axios.get("https://api.spoonacular.com/recipes/findByIngredients", {
             params: {
                 ingredients: ingredients.join(','),
@@ -18,13 +17,10 @@ export default class RecipeService {
 
     public static getRecipeInstructions(id: number) {
         RecipeService.remainingPoints = RecipeService.remainingPoints - (0.01 * RecipeService.nbRecipesExpected + 1);
-        return axios.get("../json/instructions.json");
-        // {
-        //     params: {
-        //         ingredients: ingredients.join(','),
-        //         number: RecipeService.nbRecipesExpected,
-        //         apiKey: 'REPLACE WITH API KEY'
-        //     }
-        // });
+        return axios.get(`https://api.spoonacular.com/recipes/${id}/analyzedInstructions`, {
+            params: {
+                apiKey: 'fc9eb28ac7bd478d97caad7bf209f018'
+            }
+        });
     }
 }
